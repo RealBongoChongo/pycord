@@ -602,7 +602,7 @@ class InteractionResponse:
             asyncio.ensure_future(delete(), loop=self._parent._state.loop)
 
 
-    async def edit_message(
+    async def edit(
         self,
         *,
         content: Optional[Any] = MISSING,
